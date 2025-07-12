@@ -2,11 +2,12 @@
 
 namespace Afsdarif\FilamentLogger\Resources;
 
-use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Filament\Facades\Filament;
 use Filament\Resources\Resource;
+use Filament\Forms;
+use Filament\Schemas\Schema;
 use Filament\Tables\Filters\Filter;
 use Filament\Forms\Components\Group;
 use Filament\Forms\Components\Section;
@@ -37,7 +38,7 @@ class ActivityResource extends Resource
         return config('filament-logger.resources.cluster');
     }
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
         return $form
             ->schema([
