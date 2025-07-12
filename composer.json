@@ -1,18 +1,25 @@
 {
-    "name": "z3d0x/filament-logger",
+    "name": "afsdarif/filament-logger",
     "description": "Activity logger for filament",
     "keywords": [
         "Z3d0X",
         "laravel",
-        "filament-logger"
+        "filament-logger",
+        "afsdarif"
     ],
-    "homepage": "https://github.com/z3d0x/filament-logger",
+    "homepage": "https://github.com/afsdarif/filament-logger",
     "license": "MIT",
     "authors": [
         {
             "name": "Ziyaan Hassan",
             "email": "ziyaan2010@gmail.com",
             "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/afsdarif/filament-logger"
         }
     ],
     "require": {
@@ -36,13 +43,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Z3d0X\\FilamentLogger\\": "src",
-            "Z3d0X\\FilamentLogger\\Database\\Factories\\": "database/factories"
+            "AfSdarif\\FilamentLogger\\": "src",
+            "AfSdarif\\FilamentLogger\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Z3d0X\\FilamentLogger\\Tests\\": "tests"
+            "AfSdarif\\FilamentLogger\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -60,10 +67,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Z3d0X\\FilamentLogger\\FilamentLoggerServiceProvider"
+                "AfSdarif\\FilamentLogger\\FilamentLoggerServiceProvider"
             ],
             "aliases": {
-                "FilamentLogger": "Z3d0X\\FilamentLogger\\Facades\\FilamentLogger"
+                "FilamentLogger": "AfSdarif\\FilamentLogger\\Facades\\FilamentLogger"
             }
         }
     },
