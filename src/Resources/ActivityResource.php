@@ -23,14 +23,14 @@ use Spatie\Activitylog\Contracts\Activity;
 use Spatie\Activitylog\ActivitylogServiceProvider;
 use Spatie\Activitylog\Models\Activity as ActivityModel;
 use Afsdarif\FilamentLogger\Resources\ActivityResource\Pages;
+use BackedEnum;
 
 class ActivityResource extends Resource
 {
     protected static ?string $label = 'Activity Log';
     protected static ?string $slug = 'activity-logs';
 
-    protected static ?string $navigationIcon = 'heroicon-o-clipboard-list';
-
+    protected static string | BackedEnum | null $navigationIcon = 'heroicon-o-clipboard-list';
 
     public static function getCluster(): ?string
     {
