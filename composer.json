@@ -1,5 +1,6 @@
 {
     "name": "afsdarif/filament-logger",
+    "type": "library",
     "description": "Activity logger for filament",
     "keywords": [
         "Z3d0X",
