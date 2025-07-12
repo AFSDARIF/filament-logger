@@ -1,6 +1,6 @@
 <?php
 
-namespace Z3d0X\FilamentLogger\Resources\ActivityResource\Pages;
+namespace Afsdarif\FilamentLogger\Resources\ActivityResource\Pages;
 
 use Filament\Resources\Pages\ListRecords;
 
