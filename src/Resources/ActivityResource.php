@@ -6,7 +6,6 @@ use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Filament\Facades\Filament;
 use Filament\Resources\Resource;
-use Filament\Forms;
 use Filament\Schemas\Schema;
 use Filament\Tables\Filters\Filter;
 use Filament\Forms\Components\Group;
